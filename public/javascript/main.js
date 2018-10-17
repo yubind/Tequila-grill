@@ -1,21 +1,9 @@
-
-
-
 $(function() {
     
-    $(".toggle-btn").click(function() {
-        $(".nav-toggle").stop().slideToggle("slow");
-      });
-    
 
-    $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y > 300) {
-          $(".about-content").fadeIn();
-        } else {
-          $(".about-content").fadeOut();
-        }
-    });
+ $(".toggle-btn").on("click", function() {
+   $(".nav-toggle").stop().slideToggle("medium");
+ });
     
 });
 
